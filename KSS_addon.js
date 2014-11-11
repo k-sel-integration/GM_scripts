@@ -33,6 +33,9 @@ KS_interface.innerHTML = 'function ' + interfacePrefix + 'requestFS(){' +
     'function ' + interfacePrefix + 'clearNextFile(){' +
     interfacePrefix + 'requestFS("cmd", "clear");' +
     '}' +
+	'function ' + interfacePrefix + 'remNextFile(){' +
+    interfacePrefix + 'requestFS("cmd", "rem");' +
+    '}' +
     'function ' + interfacePrefix + 'setNextFile(){' +
     'var mind = (arguments.length>1)?arguments[1]:1;' +
     'var maxd = (arguments.length>2)?arguments[2]:mind;' +
